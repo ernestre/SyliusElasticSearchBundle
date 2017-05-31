@@ -27,7 +27,7 @@ before_install:
     - composer validate
 
 install:
-    - composer update --prefer-dist
+    - composer install --prefer-dist
     - tests/Application/bin/console doctrine:schema:create --env=test -vvv --no-interaction
     - tests/Application/bin/console fos:elastica:reset --env=test -vvv --no-interaction
 
