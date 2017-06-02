@@ -57,7 +57,7 @@ Elastic search for Sylius.
         resource: "@LakionSyliusElasticSearchBundle/Resources/config/routing.yml"
     ```
 
-8. Configuration reference:
+9. Configuration reference:
 
     ```yaml
     lakion_sylius_elastic_search:
@@ -71,3 +71,14 @@ Elastic search for Sylius.
                     product_price:
                         type: price
     ```
+
+10. ElasticSearch server parameters ( optional ):
+
+    In order to change default ElasticSearch server parameters add this to `parameters.yml`:
+    ```yaml
+    fos_elastica_host: 127.0.0.1 # ElasticSearch host
+    fos_elastica_port: 9200 # ElasticSearch host
+
+    ```
+
+    Default values are: `host 127.0.0.1, port 9200`
