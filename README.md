@@ -77,7 +77,7 @@ Elastic search for Sylius.
     In order to change default ElasticSearch server parameters add this to `parameters.yml`:
     ```yaml
     fos_elastica_host: 127.0.0.1 # ElasticSearch host
-    fos_elastica_port: 9200 # ElasticSearch host
+    fos_elastica_port: 9200 # ElasticSearch port
 
     ```
 
