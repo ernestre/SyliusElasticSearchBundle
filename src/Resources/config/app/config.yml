@@ -1,8 +1,11 @@
+imports:
+    - { resource: "parameters.yml" }
+
 fos_elastica:
     clients:
         default:
             servers:
-                - { host: 127.0.0.1, port: 9200 }
+                - { host: '%fos_elastica_host%', port: '%fos_elastica_port%' }
     indexes:
         sylius:
             client: default
